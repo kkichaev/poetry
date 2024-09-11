@@ -24,6 +24,8 @@
     z-index: 1;
     background: var(--left-column-color);
     box-shadow: var(--cutter-width) 0 #D9D7CF;
+    color: white;
+    padding-top: 100px;
 }
 
 .main-tab {
@@ -31,3 +33,24 @@
     background: var(--main-tab-color);
     padding-left: var(--cutter-width);
 }
+
+.author-tab {
+   min-height: calc(100vh / 3);
+   overflow: auto;
+}
+
+.items-tab {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.author-tab::-webkit-scrollbar {
+    display: none;
+}
+
+.items-tab::-webkit-scrollbar {
+    display: none;
+}
+
