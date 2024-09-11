@@ -1,0 +1,33 @@
+* {
+    border: 1px solid green;
+}
+
+:root {
+    --cutter-width: 20px;
+    --default-padding-top: 20px;
+    --left-column-color: #F4704D;
+    --main-tab-color: #F2EFE5;
+}
+
+.page-container {
+    display: flex;
+    height: calc(100vh - 4px);
+    max-height: calc(100vh - 4px);
+}
+
+.left-tab, .main-tab {
+    padding-top: var(--default-padding-top);
+    overflow: auto;
+}
+
+.left-tab {
+    z-index: 1;
+    background: var(--left-column-color);
+    box-shadow: var(--cutter-width) 0 #D9D7CF;
+}
+
+.main-tab {
+    z-index: auto;
+    background: var(--main-tab-color);
+    padding-left: var(--cutter-width);
+}
